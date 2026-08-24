@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nitish Sundarraj Balaji — Energy Applications Engineering</title>
+<title>Nitish Sundarraj Balaji — Electrical &amp; Control Systems Engineering</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -148,6 +148,8 @@
   .chip .dot{width:5px; height:5px; border-radius:50%; background:var(--amber);}
   .chip.cert .dot{background:var(--violet);}
   .chip.lang .dot{background:var(--green);}
+  .chip.goal{border-style:dashed; border-color:var(--cyan-dim); color:var(--text);}
+  .chip.goal .dot{background:var(--cyan);}
 
   .skills-block{margin-top:32px;}
   .skills-title{font-family:var(--font-mono); font-size:11px; color:var(--text-dim); letter-spacing:0.06em; text-transform:uppercase; margin-bottom:12px;}
@@ -157,13 +159,19 @@
   .honor-card h3{font-family:var(--font-display); font-size:15.5px; font-weight:600; margin-bottom:3px;}
   .honor-card p{font-size:13px; color:var(--text-muted);}
 
-  footer{border-top:1px solid var(--border-soft); padding:60px 0 40px;}
-  .contact-inner{display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:32px; margin-bottom:48px;}
-  .contact-inner h2{margin-bottom:8px;}
-  .contact-links{display:flex; flex-direction:column; gap:10px; font-family:var(--font-mono); font-size:14px;}
-  .contact-links a{text-decoration:none; color:var(--text-muted); transition:color .15s ease;}
-  .contact-links a:hover{color:var(--cyan);}
-  .foot-bottom{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; font-family:var(--font-mono); font-size:11.5px; color:var(--text-dim); padding-top:22px; border-top:1px solid var(--border-soft);}
+  footer{border-top:1px solid var(--border-soft); padding:72px 0 40px;}
+  .contact-inner{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:40px; margin-bottom:48px;}
+  .contact-inner h2{margin-bottom:0; max-width:380px;}
+  .contact-links{display:flex; flex-direction:column; gap:16px; font-family:var(--font-mono); font-size:14px;}
+  .contact-links a{
+    text-decoration:none; color:var(--text-muted); transition:all .15s ease;
+    display:flex; align-items:center; gap:12px;
+    border:1px solid var(--border); border-radius:8px; padding:12px 18px;
+    background:var(--panel);
+  }
+  .contact-links a:hover{color:var(--cyan); border-color:var(--cyan-dim); background:var(--panel-hi);}
+  .contact-icon{width:18px; height:18px; flex-shrink:0;}
+  .foot-bottom{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; font-family:var(--font-mono); font-size:11.5px; color:var(--text-dim); padding-top:24px; border-top:1px solid var(--border-soft);}
 
   @media (prefers-reduced-motion: reduce){ *{animation-duration:0.001s !important; animation-iteration-count:1 !important; transition-duration:0.001s !important;} }
 </style>
@@ -186,9 +194,9 @@
 
   <main>
     <section class="hero container">
-      <div class="eyebrow">Energy Applications Engineering — Schneider Electric</div>
-      <h1>I turn critical power infrastructure into <span class="hl">something you can actually see.</span></h1>
-      <p class="hero-sub">I deliver end-to-end energy management and critical infrastructure monitoring for commercial and industrial customers across Eastern Canada — working the IT/OT boundary across data centers, industrial operations, healthcare facilities, and large real estate portfolios.</p>
+      <div class="eyebrow">Electrical &amp; Control Systems Engineering — Schneider Electric</div>
+      <h1>I connect electrical infrastructure to <span class="hl">the control systems that keep it running.</span></h1>
+      <p class="hero-sub">I work across power distribution, protection, and the control layers that monitor them — building EPMS and IT/OT integrations for data centers, industrial operations, healthcare facilities, and large real estate portfolios across Eastern Canada. Grounded in electrical and controls engineering, moving deliberately toward systems engineering.</p>
       <div class="hero-meta">
         <span>📍 Montréal, Québec</span>
         <span>🎓 CPI — Candidat à la profession d'ingénieur</span>
@@ -201,7 +209,7 @@
 
       <div class="dash-panel">
         <div class="dash-head">
-          <span>EPMS — MULTI-SECTOR MONITORING</span>
+          <span>ELECTRICAL &amp; CONTROL SYSTEMS — MULTI-SECTOR MONITORING</span>
           <span class="status-live"><span class="pulse"></span>LIVE</span>
         </div>
         <div class="sector-tabs" id="sectorTabs">
@@ -245,18 +253,18 @@
       <div class="about-grid">
         <div class="about-body">
           <div class="section-eyebrow">About</div>
-          <h2>An engineer who started in sales — and it shows.</h2>
-          <p>I'm currently a Specialist in Power Application Engineering at Schneider Electric, providing end-to-end energy management and critical infrastructure monitoring for commercial and industrial customers across Eastern Canada. Most of my work sits at the IT/OT boundary — supporting data centers, industrial operations, healthcare facilities, and large real estate portfolios where power visibility isn't optional.</p>
-          <p>Before engineering, I spent two years as an outside sales representative and several months in customer service — time that taught me how to read a client's actual problem, not just their stated request. That instinct carries directly into how I scope and deliver EPMS solutions today: technically sound, but built around what the customer needs to trust the system.</p>
-          <p>I hold a Master of Engineering in Electrical and Computer Engineering from Concordia University and a Bachelor's in Mechatronics, Robotics, and Automation Engineering from SRMIST — a combination that lets me move comfortably between the electrical, control, and software layers of a facility.</p>
+          <h2>Electrical foundations, systems-level thinking.</h2>
+          <p>I'm currently a Specialist in Power Application Engineering at Schneider Electric, where I deliver electrical power monitoring and control system integrations for commercial and industrial customers across Eastern Canada. Most of my work sits at the IT/OT boundary — connecting switchgear, distribution, and protection equipment to the SCADA and BMS layers that supervise them across data centers, industrial operations, healthcare facilities, and large real estate portfolios.</p>
+          <p>My academic background is built for that intersection: a Master of Engineering in Electrical and Computer Engineering from Concordia, and a Bachelor's in Mechatronics, Robotics, and Automation Engineering from SRMIST. Together they cover power systems, controls, and automation — the three disciplines that systems engineering sits on top of.</p>
+          <p>That's the direction I'm deliberately building toward: from electrical and controls delivery today, into a systems engineering role that owns the integration across hardware, controls, and software — not just one layer of it. Two years in outside sales before engineering also means I scope and communicate systems in terms a client or stakeholder actually trusts, not just what's technically correct.</p>
         </div>
         <div class="facts">
-          <div class="fact"><span class="fact-label">ROLE</span><span class="fact-val">Power App. Engineering</span></div>
+          <div class="fact"><span class="fact-label">ROLE</span><span class="fact-val">Electrical &amp; Controls Eng.</span></div>
           <div class="fact"><span class="fact-label">COMPANY</span><span class="fact-val">Schneider Electric</span></div>
           <div class="fact"><span class="fact-label">REGION</span><span class="fact-val">Eastern Canada</span></div>
-          <div class="fact"><span class="fact-label">FOCUS</span><span class="fact-val">Critical Infra IT/OT</span></div>
+          <div class="fact"><span class="fact-label">FOCUS</span><span class="fact-val">Power, Controls &amp; IT/OT</span></div>
+          <div class="fact"><span class="fact-label">TRAJECTORY</span><span class="fact-val">→ Systems Engineering</span></div>
           <div class="fact"><span class="fact-label">STATUS</span><span class="fact-val">CPI (QC)</span></div>
-          <div class="fact"><span class="fact-label">LANGUAGES</span><span class="fact-val">EN · FR · TA</span></div>
         </div>
       </div>
     </section>
@@ -265,32 +273,32 @@
       <div class="section-head">
         <div class="section-eyebrow">Capabilities</div>
         <h2>Where I add value on a project</h2>
-        <p class="section-desc">Technical depth in EPMS, paired with the client-facing instincts most engineers don't build early.</p>
+        <p class="section-desc">Electrical and controls depth today, applied with the integration mindset systems engineering demands.</p>
       </div>
       <div class="cap-grid">
 
         <div class="cap-card">
           <svg class="cap-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M7 20h10M12 16v4"/><path d="M7 8h4M7 11h6"/></svg>
-          <h3>EPMS Deployment</h3>
-          <p>Configuring Electrical Power Monitoring Systems for real-time visibility across commercial and industrial sites.</p>
+          <h3>EPMS &amp; Controls Integration</h3>
+          <p>Configuring Electrical Power Monitoring Systems and tying them into the control logic that acts on their data in real time.</p>
         </div>
 
         <div class="cap-card">
           <svg class="cap-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z"/></svg>
-          <h3>IT/OT Critical Infrastructure</h3>
-          <p>Bridging the operational technology and IT layers so power data actually reaches the systems that act on it.</p>
+          <h3>IT/OT Systems Integration</h3>
+          <p>Bridging the operational technology and IT layers so electrical data reaches the SCADA and BMS systems that act on it.</p>
+        </div>
+
+        <div class="cap-card">
+          <svg class="cap-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h16M4 12l4-4M4 12l4 4M20 12l-4-4M20 12l-4 4"/></svg>
+          <h3>Protection, Automation &amp; Controls</h3>
+          <p>Working across switchgear, distribution, and the automation layer that governs how they respond under normal and fault conditions.</p>
         </div>
 
         <div class="cap-card">
           <svg class="cap-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l7 4v5c0 5-3.2 7.6-7 9-3.8-1.4-7-4-7-9V7l7-4z"/></svg>
-          <h3>Multi-Sector Delivery</h3>
+          <h3>Multi-Sector Systems Delivery</h3>
           <p>Data centers, industrial operations, healthcare facilities, and large real estate portfolios — each with different tolerances for downtime.</p>
-        </div>
-
-        <div class="cap-card">
-          <svg class="cap-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg>
-          <h3>Client-Facing Engineering</h3>
-          <p>Sales and customer-service background turned into an ability to scope solutions clients actually understand and trust.</p>
         </div>
 
         <div class="cap-card">
@@ -300,9 +308,9 @@
         </div>
 
         <div class="cap-card">
-          <svg class="cap-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 12h8M8 8h8M8 16h4"/></svg>
-          <h3>Time Management at Scale</h3>
-          <p>Managing multiple client sites and monitoring workstreams concurrently without dropping detail.</p>
+          <svg class="cap-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="3"/><circle cx="5" cy="5" r="2"/><circle cx="19" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M9.5 10.2L6.5 6.5M14.5 10.2l3-3.7M9.5 13.8l-3 3.7M14.5 13.8l3 3.7"/></svg>
+          <h3>Systems Engineering Mindset</h3>
+          <p>Trained across electrical, controls, and software — the discipline crossover a systems role is built on, applied day to day.</p>
         </div>
 
       </div>
@@ -311,15 +319,15 @@
     <section id="experience" class="container">
       <div class="section-head">
         <div class="section-eyebrow">Experience</div>
-        <h2>From client-facing roles into engineering</h2>
-        <p class="section-desc">The path itself is part of the value — I understand what the customer needs before the technical conversation even starts.</p>
+        <h2>Building toward systems engineering, one integration at a time</h2>
+        <p class="section-desc">Each role has added a layer — client-facing judgment first, then the electrical and controls depth it now sits on top of.</p>
       </div>
       <div class="timeline">
         <div class="tl-item">
           <div class="tl-date">Aug 2025 — Present · 1 yr 1 mo</div>
           <h3>Specialist, Power Application Engineering</h3>
           <div class="tl-org">Schneider Electric · Dollard-des-Ormeaux, QC</div>
-          <p>End-to-end energy management and critical infrastructure monitoring for commercial and industrial customers across Eastern Canada, with expertise in IT/OT environments supporting data centers, industrial operations, healthcare facilities, and large real estate portfolios.</p>
+          <p>Delivering electrical power monitoring and IT/OT control system integration for commercial and industrial customers across Eastern Canada — supporting data centers, industrial operations, healthcare facilities, and large real estate portfolios where power and controls have to work as one system.</p>
         </div>
         <div class="tl-item past">
           <div class="tl-date">May 2025 — Aug 2025 · 4 mos</div>
@@ -374,7 +382,7 @@
       </div>
     </section>
 
-    <section class="container">
+    <section class="container" style="padding-bottom:120px;">
       <div class="section-head">
         <div class="section-eyebrow">Recognition</div>
         <h2>Honors</h2>
@@ -393,12 +401,17 @@
     <div class="contact-inner">
       <div>
         <div class="section-eyebrow">Get in touch</div>
-        <h2>Let's talk about your power infrastructure.</h2>
+        <h2>Let's talk about electrical &amp; control systems.</h2>
       </div>
       <div class="contact-links">
-        <a href="mailto:sundarrajnithish@gmail.com">sundarrajnithish@gmail.com</a>
-        <a href="https://www.linkedin.com/in/sundarrajnithish" target="_blank" rel="noopener">linkedin.com/in/sundarrajnithish</a>
-        <a href="https://github.com/sundarrajnithish" target="_blank" rel="noopener">github.com/sundarrajnithish</a>
+        <a href="https://www.linkedin.com/in/sundarrajnithish" target="_blank" rel="noopener">
+          <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 11v5M8 8v.01M12 16v-3.2a1.8 1.8 0 013.6 0V16M12 12.8V16"/></svg>
+          linkedin.com/in/sundarrajnithish
+        </a>
+        <a href="https://github.com/sundarrajnithish" target="_blank" rel="noopener">
+          <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2-.2 4.5-1 4.5-4.5a3.5 3.5 0 00-1-2.5 3.3 3.3 0 00-.1-2.5s-.9-.3-3 1a10.2 10.2 0 00-5.4 0c-2.1-1.3-3-1-3-1a3.3 3.3 0 00-.1 2.5 3.5 3.5 0 00-1 2.5c0 3.5 2.5 4.3 4.5 4.5-.4.4-.6.9-.5 1.5V19"/></svg>
+          github.com/sundarrajnithish
+        </a>
       </div>
     </div>
     <div class="foot-bottom">
